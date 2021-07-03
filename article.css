@@ -72,7 +72,6 @@ h1{
 
 .buttons{
     /* je suis la boîte parent des boutons */
-    border: solid 1px red;
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
@@ -88,20 +87,18 @@ h1{
     background: black;
 }
 
+.bouton-cart :active{
+    color: rgba(170, 150, 141);   
+}
+
 .btn{
     /* Je suis la partie texte du bouton */
     text-decoration: none;
     color: white;
-    border: red solid 1px;
     font-size: 30px;
     font-weight: bold;
 }
 
-
-.bouton-cart :link{
-    background: black;
-    color: white;
-}
 
 .selecteur{
     width: 45%;
@@ -135,8 +132,6 @@ label{
 }
 
 
-
-
 /* ---------FIN BOITE BOUTONS---------- */
 
 /* -------------PARAGRAPHE DESCRIPTION---------------- */
@@ -164,3 +159,29 @@ h4{
     padding: 15px;
     font-size: 20px;
 }
+
+/* ------------SLIDER HELL--------------- */
+/* .slider{
+    width: auto;
+}
+
+.img-slider{
+    width: 399px;
+    height: 591px;
+    margin: 0 15px;
+}
+
+.div1{
+    background: url(article-img/article-carrousel-img/top_1.jpeg) center no-repeat;
+
+}
+
+.div2{
+    background: url(article-img/article-carrousel-img/top_2.jpeg) center no-repeat;
+    
+}
+
+.div3{
+    background: url(article-img/article-carrousel-img/top_3.jpeg) center no-repeat;
+    
+} */
