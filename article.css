@@ -81,23 +81,19 @@ h1{
     width: 45%;
     border-radius: 66px;
     box-shadow: rgba(170, 150, 141) 10px 10px 10px;
-
+    color: white;
+    background: black;
 }
 
 .btn{
     text-decoration: none;
-    color: white;
+    color: white;   
 }
 
-.bouton-cart:visited{
+/* .bouton-cart :visited{
     color: black;
     background: white;
-}
-
-.bouton-cart:active{
-    color: black;
-    background: white;  
-}
+} */
 
 .selecteur{
     width: 45%;
