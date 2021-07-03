@@ -98,7 +98,19 @@ gap: 10px;
     }
 
 
+ @media (max-width: 900px) {
+        .flex {
+          flex-direction: column;
+          height: 100%;
+        }
+      } 
 
+
+ @media (max-width: 1000px) {
+        footer  {
+          flex-direction: column;
+          height: 90%;
+        }
 
 
 
