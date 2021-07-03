@@ -4,11 +4,31 @@
     box-shadow: border-box;
 }
 
+body{
+    font-family: ;
+}
+
 .bandeau{
-    background: url(images/bandeauMarque.png) no-repeat center/
-    cover;
+    background-color: rgba(233, 160, 161, 0.4);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    padding: 15px;
+
+}
+
+.titreRecherche{
+    border: 1px red solid;
+    grid-area: t;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+}
+
+h2{
+    text-align: center;
 
 }
 
@@ -17,17 +37,18 @@ main{
    
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
     grid-template-areas: 
-    "h ."
+    "t t"
     "a b"
     "c d"
-    "e f";
+    "e f"
+    "g h";
     
 }
 
 h2{
-    grid-area: h;
+    grid-area: t;
     display: flex;
     justify-content: center;
 }
@@ -93,6 +114,31 @@ h2{
     text-align: center;
     margin-bottom: 30px;
     font-size: larger;
+}
+
+.box7{
+    grid-area: g;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: larger;
+}
+
+.box8{
+    grid-area: h;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: larger;
+}
+
+.bandeaubas{
+    display: flex;
+    justify-content: flex-end;
 }
 
 

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryuyo page vêtements</title>
     <link rel="stylesheet" href="vetements.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -16,20 +19,34 @@
 <!-- HEADER -->
 
 
-<!-- BANDEAU -->
+<!-- Bandeau haut -->
+
     <div class="bandeau">
         <img src="imagesV/logoMarque.png" alt="photo bandeau">
 
     </div>
-<!-- BANDEAU -->
+
+<!-- Bandeau haut -->
 
 <!-- CORPS -->
 
 
     <main>
 
+        <div class="titreRecherche">
+
         <h2> HAUTS</h2> 
-        <input id="main-search" data-url="/content/hmonline/fr_fr/jcr:content/header/autosuggestsearch.display.html" type="search" data-test="false" name="q" placeholder="Recherche de produits" minlength="3" maxlength="200" data-autocomplete-disabled="false" class="ui-autocomplete-input menu__search_input" autocorrect="off" spellcheck="false" autocomplete="off" aria-label="Recherche de produits">
+
+        <form>
+            <div>
+              <input type="search" id="maRecherche" name="q"
+               placeholder="Rechercher sur le site">
+              <button>Rechercher</button>
+            </div>
+          </form>
+
+        </div>
+        
 
         <div class="box1"> 
      
@@ -70,7 +87,7 @@
          
         <img src="imagesV/chemiseBlanche.png" alt="blouse blanche">
         <div>  
-        <p>Blouse froissée<br> Blanc<br><strike> 25 €</strike><br>15 €</p>
+        <p>Blouse froissée<br> Blanc<br><strike> 25 €</strike><br><b>15 €</b></p>
         </div> 
 
         </div>
@@ -91,9 +108,36 @@
         <p>Top sans manches<br> Grège foncé<br><strike> 25 €</strike><br> <b>12 €</b></p>
         </div>
     </div> 
+
+    <div class="box7">
+
+        <img src="imagesV/toporange.png" alt="top orange">
+        <div>
+        <p>T-shirt en lin<br>Orange<br><strike> 15 €</strike><br> <b>6 €</b></p>
+        </div>
+    </div> 
+
+    <div class="box8">
+
+        <img src="imagesV/topcotele.png" alt="top cotelé">
+        <div>
+        <p>Débardeur côtelé<br>Beige clair<br><strike> 25 €</strike><br> <b>12 €</b></p>
+        </div>
+    </div> 
       
     </main>
 <!-- CORPS -->
+
+<!-- Bandeau bas -->
+
+<div class="bandeaubas">
+
+<img src="imagesV/logobas.png" alt="logobas">
+
+</div>
+
+
+<!-- Bandeau bas -->
     
 
 <!-- FOOTER -->
