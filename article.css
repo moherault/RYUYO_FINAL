@@ -71,6 +71,8 @@ h1{
 /* -------BOITE BOUTONS---------- */
 
 .buttons{
+    /* je suis la boîte parent des boutons */
+    border: solid 1px red;
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
@@ -78,6 +80,7 @@ h1{
 }
 
 .bouton-cart{
+    /* je suis la boîte du bouton */
     width: 45%;
     border-radius: 66px;
     box-shadow: rgba(170, 150, 141) 10px 10px 10px;
@@ -86,14 +89,19 @@ h1{
 }
 
 .btn{
+    /* Je suis la partie texte du bouton */
     text-decoration: none;
-    color: white;   
+    color: white;
+    border: red solid 1px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
-/* .bouton-cart :visited{
-    color: black;
-    background: white;
-} */
+
+.bouton-cart :link{
+    background: black;
+    color: white;
+}
 
 .selecteur{
     width: 45%;
@@ -117,14 +125,6 @@ select{
 
 label{
     font-size: 30px;
-}
-
-.bouton-cart{
-    font-size: 30px;
-    color: white;
-    background: black;
-    font-weight: bold;
-
 }
 
 .bouton-fav{
