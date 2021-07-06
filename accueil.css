@@ -240,6 +240,8 @@ h3 {
 
 .art img {
     position: relative; 
+    width: 450px;
+    height: 310px;
     top: 5%; 
     right: 5%;
 }
