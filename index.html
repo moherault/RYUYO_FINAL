@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Sanchez&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="accueil.css">
+    <title>流用 RYUYO</title>
+</head>
+
+<body>
+
+     <!-- HEADER  -->
+        <header>
+        <h2>流用</h2>
+        <nav>
+            <span class="icones"><a href="http://" target="_blank"><img src="Images_accueil/icones/favoris.png" alt="favoris"></a></span>
+            <span class="icones"><a href="http://" target="_blank"><img src="Images_accueil/icones/contact.png" alt="contact"></a></span>
+            <span class="icones"><a href="http://" target="_blank"><img src="Images_accueil/icones/panier.png" alt="panier"></a></span>
+        </nav>
+    </header>
+
+        <!-- menu burger -->
+        <nav class="burger"  role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+              
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu">
+                <a href="#"><li>Accueil</li></a>
+                <a href="#"><li>Favoris</li></a>
+                <a href="#"><li>Panier</li></a>
+                <a href="#"><li>Mon compte</li></a>
+              </ul>
+            </div>
+          </nav>
+
+
+     <!-- section BANNIERE -->
+    <section id="banner">
+
+        <div class="logo"><img src="Images_accueil/banniere/logo.png" alt="logo"></div>
+
+        <div class="titre"><img src="Images_accueil/banniere/ryuyo_kanjis.png" alt="titre"></div>
+
+
+    </section>
+
+    <!-- section VÊTEMENTS -->
+    <section id="clothes">
+        <div class="cat">
+            <img src="Images_accueil/clothes/Hauts.png" alt="hauts">
+
+
+            <p> <strong>シャツ Hauts</strong><br>
+                Nos hauts sont fabriqués en France à partir de coton bio <br> issu de commerce
+                équitable qui reverse un pourcentage <br> des bénéfices aux bébés koalas. 
+            </p>
+
+        <div class="acheter1">
+            <a href="http://" target="_blank">
+             <img src="Images_accueil/clothes/acheter.png" alt="bouton"></a>
+            </div>
+
+        </div>
+
+
+        <div class="cat">
+            <img src="Images_accueil/clothes/Bas.png" alt="bas">
+
+            <p> <strong> パンツ Bas</strong><br>
+                Nos bas sont féministes, inclusifs, véganes et sans <br>
+            gluten.</p>
+
+
+            <div class="acheter2"></div>
+            <a href="http://" target="_blank">
+             <img src="Images_accueil/clothes/acheter.png" alt="bouton"></a>
+        </div>
+
+        </div>
+
+        <div class="cat">
+            <img src="Images_accueil/clothes/Robes.png" alt="robes">
+
+
+            <p> <strong>ドレス Robes</strong><br>
+                Nos robes se lavent à 30°C mais lavent et absolvent <br>
+            également tous vos péchés.</p>
+
+
+            <div class="acheter3"></div>
+            <a href="http://" target="_blank">
+             <img src="Images_accueil/clothes/acheter.png" alt="bouton"></a>
+        </div>
+
+    </section>
+<!-- section VALEURS -->
+<section id="nosvaleurs">
+
+    <div class="art"><img src="Images_accueil/artisanat.png" alt="artisanat"></div>
+
+
+    <div class="blocktext">
+    <h3>Nos valeurs</h3>
+    <p>Chez <strong>RYUYO</strong> nous croyons en la paix dans le monde et au père noël. 
+        C’est pourquoi nous souhaitons vous proposer le meilleur au prix le plus bas.
+        Nos articles sont fabriqués en France, cruelty free, conçus avec des matières recyclées et issues du commerce équitable.
+        Nous vous aidons à déménager et gardons même vos enfants, si besoin. 
+    </p>
+
+    <div class="signature"><img src="Images_accueil/signature.png" alt="signature"></div>
+
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+    <div>
+    <div class="paiement">
+    <h3>Paiement sécurisé </h3>
+    <p>Carte Bleue,Visa,Mastercard</p>
+    </div>
+    
+    <div class="serviceclient">
+    <h3>Service client </h3>
+    <p>Contactez-nous</p>
+    </div>
+    </div>
+    
+    
+    
+    <div class="inscription">      
+    <div><P> INCRIVEZ VOUS A NOTRE NEWSLETTER!</P></div>
+    
+    <div><p>+ DE NEWS + DE MODE + DE BONS PLANS</p> </div>
+    <div><label for="email">Inscrivez votre Email</label></div>
+    <div><input type="email" id="email"pattern="Inscrivez votre Emailsize="30" required></div>
+    </div>
+    
+    <div class="footerinformation">   
+    
+    <a href="Moncompte">Mon Compte</a>
+    <a href="Faireunretour">Faire un retour</a>
+    <a href="FAQ">FAQ</a>
+    <a href="CGV">CGV</a>
+    <a href="Mentionslégales">Mentions légales </a>
+    <a href="Suivremocolis">Suivre mon colis</a>
+    <a href="Conditionsd'utilisation">Condition d'utilisation</a>
+    </div>
+    
+    <footer>
+    
+    <div>
+    
+       <div class="Réseauxsociaux">  
+       
+        <div class="p">
+    
+        <p>SUIVEZ-NOUS !</p>    
+        <p>REJOIGNEZ LA COMMUNAUTÉ  RYUYO </p>
+    
+        </div>
+    
+    <div class="imagesréseaux">
+    
+    <a href="#"><img src="headerfooter/image/facebook.png" alt="facebook"></a>
+    <a href="#"><img src="headerfooter/image/instagram2.png" alt="Instagram"></a>
+    <a href="#"><img src="headerfooter/image/twitter.png" alt="twitter"></a>
+    
+    </div>
+    
+    </footer>
+
+</body>
+</html>
