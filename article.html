@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="article.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,25 +16,81 @@
 
 <body>
 
-<!-- ATTENTION IL FAUT METTRE LE HEADER -->
+
+<header class="flex">  
+
+    <h2>流用</h2> 
+
+    <nav><span class="icones"><nav> 
+ <span class="icones"><a href="#"><img src="headerfooter/image/favoris.png" alt="favoris"></a></span>
+ <span class="icones"><a href="#"><img src="headerfooter/image/contact.png" alt="profil"></a></span>
+ <span class="icones"><a href="#"><img src="headerfooter/image/imagepanier2.png" alt="panier"></a></span>        
+    </nav>     
+
+</header>
+            
+<!-- BURGER RESPONSIVE -->
+<nav class="burger"  role="navigation">
+    <div id="menuToggle">
+     
+      <input type="checkbox" />
+     
+      <span></span>
+      <span></span>
+      <span></span>
+     
+      <ul id="menu">
+
+        <a href="#"><li>Accueil</li></a>
+        <a href="#"><li>Favoris</li></a>
+        <a href="#"><li>Panier</li></a>
+        <a href="#"><li>Mon compte</li></a>
+    
+      </ul>
+    </div>
+  </nav>
+
+<!-- FIN BURGER -->
 
 <!-- PHOTOS -->
     <main>
 
-        <h1>HAUTS</h1> 
+        <h1 class="nomcategorie">シャツ HAUTS</h1> 
       
         <section class="boite-produit">
-           
-            <img src="article-img/Encart_produit.png" alt="photo-mannequin" class="principale">
-    
-            <div class="carrousel-img">
-                <img src="article-img//HM1.png" alt="mannequin">
-                <img src="article-img//HM2.png" alt="detail">
-                <img src="article-img//HM3.png" alt="packshot">
+
+           <!-- Début des emmerdes CAROUSEL -->
+            <div class="slider">
+
+                <div class="img-slider div1"></div>
+                <div class="img-slider div2"></div>
+                <div class="img-slider div3"></div>
+
             </div>
 
+            <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+            <script src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
+
+            <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+            <script src="script.js"></script>
+            <!-- FIN des emmerdes CAROUSEL  -->
+    
+            <!-- boite qui contient les miniatures  -->
+
+            <img src="article-img/Encart_produit.png" alt="photo-principale" class="photo-principale">
+
+            <div class="carrousel-img">
+                    <img src="article-img//HM1.png" alt="mannequin">
+                    <img src="article-img//HM2.png" alt="detail">              
+                    <img src="article-img//HM3.png" alt="packshot">
+            </div>
+            <!-- boite qui contient les miniatures -->
+
         </section>
-<!-- PHOTOS FIN -->
+
+
+<!-- PHOTOS FIN-->
 
 
 <!-- NOM / PRIX -->
@@ -40,7 +98,7 @@
         <section class="Nom_Prix">
 
             <div class="nom-prix">
-                <h2>EDGY TOP</h2>
+                <h2 class="nomarticle">EDGY TOP</h2>
                 <p class="douze">12€</p>
                 <p class="trente-six">36€</p>
             </div>
@@ -51,13 +109,13 @@
 <!-- BOUTONS / SELECTEURS -->
             <div class="buttons">
             <button class="bouton-cart" type="button">
-                <a href="#" class="btn">ADD TO CART</a>   
+                <a href="#" class="btn">AJOUTER AU PANIER</a>   
             </button>
 
             <div class="selecteur">
-            <label for="size-select">SIZE</label>
+            <label for="size-select">TAILLE</label>
             <select name="sizes" id="sizes">
-                <option value="Select your size">Select your size</option>
+                <option value="Select your size">Selectionner votre taille</option>
                 <option value="XXS">XXS</option>
                 <option value="XS">XS</option>
                 <option value="S">S</option>
@@ -78,16 +136,85 @@
 
  <!-- PARAGRAPHE DESCRIPTION -->
             <div class="description-art">
-                <h3>Description de l'article</h3>
-                <p class="petitpara">Top beige foncé, col rond, manches courtes. Un must-have d’une garde-robe fancy. Garantie Curelty free.</p>
+                <h3 class="descriptionarticle" >Description de l'article</h3>
+                <p class="petitpara1">Top beige foncé, col rond, manches courtes. Un must-have d’une garde-robe fancy. Garantie Curelty free.</p>
                 <h4>Composition</h4>
                 <p class="petitpara">100% Coton <br> Garantie sans allergène</p>
             </div>
 <!-- PARAGRAPHE DESCRIPTION FIN -->
+
         </section>
          
     </main>
 
-<!-- ATTENTION IL FAUT METTRE LE FOOTER -->
+<!--FOOTER ET HEADER DOMINIQUE -->
+
+<footer>
+    <div>
+    <div class="paiement">
+    <h3>Paiement sécurisé </h3>
+    <p>Carte Bleue,Visa,Mastercard</p>
+    </div>
+    
+    <div class="serviceclient">
+    <h3>Service client </h3>
+    <p>Contactez-nous</p>
+    </div>
+    </div>
+    
+    
+    
+    <div class="inscription">      
+    <div><P> INCRIVEZ VOUS A NOTRE NEWSLETTER!</P></div>
+    
+    <div><p>+ DE NEWS + DE MODE + DE BONS PLANS</p> </div>
+    <div><label for="email">Inscrivez votre Email</label></div>
+    <div><input type="email" id="email"pattern="Inscrivez votre Emailsize="30" required></div>
+    </div>
+    
+    <div class="footerinformation">   
+    
+    <a href="Moncompte">Mon Compte</a>
+    <a href="Faireunretour">Faire un retour</a>
+    <a href="FAQ">FAQ</a>
+    <a href="CGV">CGV</a>
+    <a href="Mentionslégales">Mentions légales </a>
+    <a href="Suivremocolis">Suivre mon colis</a>
+    <a href="Conditionsd'utilisation">Condition d'utilisation</a>
+    </div>
+    
+    <footer>
+    
+    <div>
+    
+       <div class="Réseauxsociaux">  
+       
+        <div class="p">
+    
+        <p>SUIVEZ-NOUS !</p>    
+        <p>REJOIGNEZ LA COMMUNAUTÉ  RYUYO </p>
+    
+        </div>
+    
+    <div class="imagesréseaux">
+    
+    <a href="#"><img src="headerfooter/image/facebook.png" alt="facebook"></a>
+    <a href="#"><img src="headerfooter/image/instagram2.png" alt="Instagram"></a>
+    <a href="#"><img src="headerfooter/image/twitter.png" alt="twitter"></a>
+    
+    </div>
+    
+    </footer>
+
+    <!-- FOOTER ET HEADER DOMINIQUE --> 
+
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js%22%3E"></script>
+
+<script>
+    gsap.from ('.nomcategorie', {opacity:0, duration:1, y:50, ease:'Power2.easeInOut'})
+</script>
+       
+        
+    
 </body>
 </html>

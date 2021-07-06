@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RYUYO</title>
+    <link rel="stylesheet" href="paiement.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!-- HEADER DESKTOP-->
+    <header class="flex">
+
+        <h2>流用</h2>
+
+        <nav> <span class="icones">
+                <nav>
+                    <span class="icones"><a href="#"><img src="image/favoris.png" alt="favoris"></a></span>
+                    <span class="icones"><a href="#"><img src="image/contact.png" alt="profil"></a></span>
+                    <span class="icones"><a href="#"><img src="image/imagepanier2.png" alt="panier"></a></span>
+                </nav>
+
+    </header>
+
+    <!-- BURGER RESPONSIVE -->
+
+    <nav class="burger" role="navigation">
+        <div id="menuToggle">
+            <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+            <input type="checkbox" />
+
+            <!--
+          Some spans to act as a hamburger.
+          
+          They are acting like a real hamburger,
+          not that McDonalds stuff.
+          -->
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <!--
+          Too bad the menu has to be inside of the button
+          but hey, it's pure CSS magic.
+          -->
+            <ul id="menu">
+                <a href="#">
+                    <li>Accueil</li>
+                </a>
+                <a href="#">
+                    <li>Favoris</li>
+                </a>
+                <a href="#">
+                    <li>Panier</li>
+                </a>
+                <a href="#">
+                    <li>Mon compte</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+
+    <div class="logofinal">
+        <img src="Images_paiement/logo.png" alt="logo RYUYO">
+    </div>
+
+
+
+    <div class="catégorie">
+        <h1><span class="gris">Panier > Informations > Livraison </span>> Paiement</h1>
+    </div>
+
+    <div class="paiementexpress">
+        <h2>PAIEMENT EXPRESS</h2>
+        <input type="image" id="image" alt="Login" src="images_paiement/paypal.png">
+        <h2>OU</h2>
+    </div>
+
+    <!-- CARTE DE CREDIT -->
+
+    <div class="cartecrédit">
+
+        <div class="cartesproposées">
+            <h2>Carte de crédit</h2>
+            <div class="iconescartes">
+                <img src="images_paiement/Mastercard.png" alt="icone mastercard">
+                <img src="images_paiement/Visa.png" alt="icone visa">
+                <img src="images_paiement/AmericanExpress.png" alt="icone amex">
+
+            </div>
+        </div>
+
+        <div class="infoscartedesktop">
+
+            <!-- <label for="cname">Nom indiqué sur la carte</label> -->
+            <input type="text" id="cname" name="cardname" placeholder="Nom indiqué sur la carte">
+            <!-- <label for="ccnum">Numéro de carte</label> -->
+            <input type="text" id="ccnum" name="cardnumber" placeholder="Numéro de carte">
+            <!-- <label for="expmonth">Date d'expiration</label> -->
+
+            <div class="petiteinfo">
+                <input class="desktop" type="text" id="expmonth" name="expmonth"
+                    placeholder="Date d'expiration (MM/AA)">
+                <input class="mobile" type="text" id="expmonth" name="expmonth" placeholder="Date d'expiration">
+                <!-- <label for="Cryptogramme">Code sécurité</label> -->
+                <input type="text" id="Cryptogramme" name="Cryptogramme" placeholder="Code sécurité">
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- CARTE DE CREDIT -->
+
+
+
+    <!-- MODE LIVRAISON -->
+
+    <h2>Mode de livraison</h2>
+
+    <section class="livraison">
+        <div class="modelivraison">
+
+            <div class="domicile">
+                <input type="radio" id="Livraison à domicile" name="drone" value="Livraison à domicile" checked>
+                <img src="Images_paiement/icone_livraison.png" alt="icone camion">
+                <label for="Livraison à domicile">Livraison à domicile</label>
+
+            </div>
+
+            <div class="pointrelais">
+                <input type="radio" id="Livraison en point relais" name="drone" value="Livraison en point relais">
+                <img src="Images_paiement/icone_point_relais.png" alt="icone point relais">
+                <label for="Livraison en point relais">Livraison en point relais</label>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- MODE LIVRAISON -->
+
+
+    <!-- ADRESSE FACTURATION -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>Adresse de facturation</h2>
+
+
+    <section>
+        <div class="facturation">
+
+            <div class="adresselivraison">
+                <input type="radio" id="Identique à l'adresse de livraison" name="drone"
+                    value="Identique à l'adresse de livraison" checked>
+                <label for="Identique à l'adresse de livraison">Identique à l'adresse de livraison</label>
+            </div>
+
+            <div class="facturationdifférente">
+                <input type="radio" id="Utiliser une adresse de facturation différente" name="drone"
+                    value="Utiliser une adresse de facturation différente">
+                <label for="Utiliser une adresse de facturation différente">Utiliser une autre adresse de facturation
+                </label>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ADRESSE FACTURATION -->
+
+
+    <!-- RETOUR AU PANIER -->
+    <section class="bas">
+
+        <div class="panier">
+            <h3>Retour au panier</h3>
+            <img src="images_paiement/ic_baseline-shopping-basket.png" alt="icone panier">
+
+        </div>
+        <!-- RETOUR AU PANIER -->
+
+
+        <!-- CHECKOUT -->
+        <label for="Continuer vers le paiement">
+            <input class="checkout" type="submit" value="Continuer vers le paiement" class="btn">
+        </label>
+
+        <!-- CHECKOUT -->
+
+    </section>
+
+
+
+    <footer>
+        <div>
+            <div class="paiement">
+                <h3>Paiement sécurisé </h3>
+                <p>Carte Bleue,Visa,Mastercard</p>
+            </div>
+
+            <div class="serviceclient">
+                <h3>Service client </h3>
+                <p>Contactez-nous</p>
+            </div>
+        </div>
+
+
+
+        <div class="inscription">
+            <div>
+                <P> INCRIVEZ VOUS A NOTRE NEWSLETTER!</P>
+            </div>
+
+            <div>
+                <p>+ DE NEWS + DE MODE + DE BONS PLANS</p>
+            </div>
+            <div><label for="email">Inscrivez votre Email</label></div>
+            <div><input type="email" id="email" pattern="Inscrivez votre Emailsize=" 30" required></div>
+        </div>
+
+        <div class="footerinformation">
+
+
+            <a href="Moncompte">Mon Compte</a>
+            <a href="Faireunretour">Faire un retour</a>
+            <a href="FAQ">FAQ</a>
+            <a href="CGV">CGV</a>
+            <a href="Mentionslégales">Mentions légales </a>
+            <a href="Suivremocolis">Suivre mon colis</a>
+            <a href="Conditionsd'utilisation">Condition d'utilisation</a>
+        </div>
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <div>
+
+                <div class="Réseauxsociaux">
+
+                    <div class="p">
+
+                        <p>SUIVEZ-NOUS !</p>
+                        <p>REJOIGNEZ LA COMMUNAUTÉ RYUYO </p>
+
+                    </div>
+
+                    <div class="imagesréseaux">
+
+                        <a href="#"><img src="image/facebook.png" alt="facebook"></a>
+                        <a href="#"><img src="image/instagram2.png" alt="Instagram"></a>
+                        <a href="#"><img src="image/twitter.png" alt="twitter"></a>
+
+                    </div>
+
+        </footer>
+
+        <!-- FOOTER -->
+
+
+</body>
+
+</html>
