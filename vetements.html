@@ -6,34 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryuyo page vêtements</title>
     <link rel="stylesheet" href="vetements.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
 <!-- HEADER -->
-    <header>
+        <header>
+            <h2 class="logo">流用</h2>
+            <nav>
+                <a href="#"><img src="imagesV/logofavoris.png" alt="favoris"></a>
+                <a href="#"><img src="imagesV/logoProfil.png" alt="profil"></a>
+                <a href="#"><img src="imagesV/logopanier.png" alt="panier"></a>
+            </nav>
 
-    </header>
-<!-- HEADER -->
+        </header>
+<!-- HEADER -->        
+
+<!-- menu burger -->
+
+            <nav class="burger" role="navigation">
+                <div id="menuToggle">
+                  <!--
+                  A fake / hidden checkbox is used as click reciever,
+                  so you can use the :checked selector on it.
+                  -->
+                  <input type="checkbox" />
+                  
+                  <!--
+                  Some spans to act as a hamburger.
+                  
+                  They are acting like a real hamburger,
+                  not that McDonalds stuff.
+                  -->
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  
+                  <!--
+                  Too bad the menu has to be inside of the button
+                  but hey, it's pure CSS magic.
+                  -->
+                  <ul id="menu">
+                    <a href="#"><li>Accueil</li></a>
+                    <a href="#"><li>Favoris</li></a>
+                    <a href="#"><li>Panier</li></a>
+                    <a href="#"><li>Mon compte</li></a>
+                  </ul>
+                </div>
+              </nav>
 
 
-<!-- BANDEAU -->
+<!-- menu burger -->
+    
+       
+
+    
+
+
+
+<!-- BANDEAU HAUT -->
+
+
     <div class="bandeau">
         <img src="imagesV/logoMarque.png" alt="photo bandeau">
+        
 
     </div>
-<!-- BANDEAU -->
+
+<!-- BANDEAU HAUT -->
+
 
 <!-- CORPS -->
 
 
     <main>
 
-        <h2> HAUTS</h2> 
-        <input id="main-search" data-url="/content/hmonline/fr_fr/jcr:content/header/autosuggestsearch.display.html" type="search" data-test="false" name="q" placeholder="Recherche de produits" minlength="3" maxlength="200" data-autocomplete-disabled="false" class="ui-autocomplete-input menu__search_input" autocorrect="off" spellcheck="false" autocomplete="off" aria-label="Recherche de produits">
+        
+
+        <h1>シャツ HAUTS</h1> 
+
+        <form>
+            <div>
+              <input type="search" id="maRecherche" name="q"
+               placeholder="Rechercher sur le site">
+              <button>Rechercher</button>
+            </div>
+          </form>
+
+        
+        
 
         <div class="box1"> 
      
-        <img src="imagesV/blouseRose.png" alt="top plissé">    
+        <img src="imagesV/blouseRose.png" alt="top plissé"> 
+        
+
         
         <div>
             <p>Top plissé <br> Rose <br><strike>25 €</strike><br>
@@ -70,7 +143,7 @@
          
         <img src="imagesV/chemiseBlanche.png" alt="blouse blanche">
         <div>  
-        <p>Blouse froissée<br> Blanc<br><strike> 25 €</strike><br>15 €</p>
+        <p>Blouse froissée<br> Blanc<br><strike> 25 €</strike><br><b>15 €</b></p>
         </div> 
 
         </div>
@@ -91,18 +164,110 @@
         <p>Top sans manches<br> Grège foncé<br><strike> 25 €</strike><br> <b>12 €</b></p>
         </div>
     </div> 
+
+    <div class="box7">
+
+        <img src="imagesV/toporange.png" alt="top orange">
+        <div>
+        <p>T-shirt en lin<br>Orange<br><strike> 15 €</strike><br> <b>6 €</b></p>
+        </div>
+    </div> 
+
+    <div class="box8">
+
+        <img src="imagesV/topcotele.png" alt="top cotelé">
+        <div>
+        <p>Débardeur côtelé<br>Beige clair<br><strike> 25 €</strike><br> <b>12 €</b></p>
+        </div>
+    </div> 
       
     </main>
 <!-- CORPS -->
+
+
+
+<!-- Bandeau bas -->
     
 
 <!-- FOOTER -->
     <footer>
 
+        <div>
+            <div class="paiement">
+            <h3>Paiement sécurisé </h3>
+            <p>Carte Bleue,Visa,Mastercard</p>
+            </div>
+            
+            <div class="serviceclient">
+            <h3>Service client </h3>
+            <p>Contactez-nous</p>
+            </div>
+            </div>
+            
+            
+            
+            <div class="inscription">      
+            <div><P> INCRIVEZ VOUS A NOTRE NEWSLETTER!</P></div>
+            
+            <div><p>+ DE NEWS + DE MODE + DE BONS PLANS</p> </div>
+            <div><label for="email">Inscrivez votre Email</label></div>
+            <div><input type="email" id="email"pattern="Inscrivez votre Emailsize="30" required></div>
+            </div>
+            
+            <div class="footerinformation">   
+            
+            <a href="Moncompte">Mon Compte</a>
+            <a href="Faireunretour">Faire un retour</a>
+            <a href="FAQ">FAQ</a>
+            <a href="CGV">CGV</a>
+            <a href="Mentionslégales">Mentions légales </a>
+            <a href="Suivremocolis">Suivre mon colis</a>
+            <a href="Conditionsd'utilisation">Condition d'utilisation</a>
+            </div>
+            
+            <footer>
+            
+            <div>
+            
+               <div class="Réseauxsociaux">  
+               
+                <div class="p">
+            
+                <p>SUIVEZ-NOUS !</p>    
+                <p>REJOIGNEZ LA COMMUNAUTÉ  RYUYO </p>
+            
+                </div>
+            
+            <div class="imagesréseaux">
+            
+            <a href="#"><img src="headerfooter/image/facebook.png" alt="facebook"></a>
+            <a href="#"><img src="headerfooter/image/instagram2.png" alt="Instagram"></a>
+            <a href="#"><img src="headerfooter/image/twitter.png" alt="twitter"></a>
+            
+            </div>
+
     </footer>
 <!-- FOOTER -->
 
 
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+
+
+<script>
+
+
+    gsap.from ('img',{opacity:0, duration:1, y:50, ease:'Power2.easeInOut'})
+
+
+
+    
+
+</script>
+
+
+
+
+</script>
     
     
 </body>
