@@ -1,0 +1,402 @@
+body {
+    font-family: 'Roboto', sans-serif;
+ }
+ 
+ 
+ /* section HEADER */
+ header {
+     background: black;
+     color: white;
+     height: auto;
+     width: 100%;
+ 
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ 
+ h2 {
+     margin-left: 2%;
+     font-weight: lighter;
+ }
+ 
+ .icones {
+     padding: 20px;
+ }
+
+ /* section BANNIERE */
+#banner {
+    height: 90vh;
+    width: 100%;
+    background:url(Images_accueil/banniere/Banner.png)no-repeat center / cover;
+}
+
+.logo {
+    position: absolute; 
+    top: 15%; 
+    left: 80%;
+}
+
+.titre {
+    position: absolute; 
+    top: 40%; 
+    left: 5%;
+}
+
+
+/* section VÊTEMENTS  */
+
+#clothes {
+    height: 90vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ 
+}
+/* section VALEURS */
+
+#nosvaleurs {
+    background: #C3C9D9;
+    height: 40vh; 
+    width: 80%;
+    margin: 10%;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    font-size: 48px;
+    font-family: 'Sanchez', serif;
+}
+
+.art img {
+    position: relative; 
+    top: 5%; 
+    right: 5%;
+}
+
+.signature img {
+   position: relative; 
+    top: 10%; 
+    left: 80%;
+    display: block;
+    max-width: 100%;
+}
+
+
+/* section FOOTER  */
+footer {
+    background: black;
+    color: white;
+    height: 50vh;
+    width: 100%;
+}
+
+@media (max-width: 1600px) {
+
+    #clothes {
+        width: 100%;
+        height: 90%;
+        margin: 30px;
+        padding: 20px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+
+    .blocktext {
+        font-size: 15px;
+        text-align: justify;
+
+    }
+
+}
+
+@media (max-width: 1100px) {
+
+    #banner {
+        height: 80vh;
+        width: 100%;
+        background:url(Images_accueil/banniere/Banner.png)no-repeat center / cover;
+    }
+
+     .logo img  {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        bottom: 10px;
+        right: 40px;
+    }
+
+    .titre img {
+        width: 450px;
+        height: 210px;
+        position: relative;
+        bottom: 50px;
+
+    }
+
+    #clothes {
+        width: 100%;
+        height: 80%;
+        margin: 30px;
+        padding: 20px;
+
+    }
+
+    /* section VALEURS */
+
+        #nosvaleurs {
+            height: 60vh; 
+            width: 80%;
+            margin: 50px 10px 50px 10px;
+            padding: 30px;
+
+            flex-direction: column;
+
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+
+
+        .blocktext {
+            font-size: 15px;
+            text-align: justify;
+
+        }
+
+        .art img {
+        width: 400px;
+        height: 300px;
+        position: center;
+        }
+
+
+
+      /* section FOOTER  */
+      footer {
+        height: 30vh;
+        width: 100%;
+        }
+
+
+    }
+
+    @media only screen and (max-width: 768px) {
+
+        /* section HEADER */
+        .icones {
+        padding: 5px;
+        }
+    
+        /* section BANNIERE */
+    
+        #banner {
+            height: 50vh;
+            width: 100%;
+            background:url(Images_accueil/banniere/Banner.png)no-repeat center / cover;
+        }
+    
+    
+        .logo img  {
+            width: 110px;
+            height: 110px;
+            position: relative;
+            bottom: 10px;
+            right: 40px;
+    
+        }
+    
+        .titre img {
+            width: 310px;
+            height: 160px;
+            position: relative;
+            bottom: 100px;
+    
+    
+        }
+    
+     /* section VÊTEMENTS */
+        #clothes {
+            width: 70%;
+            height: 100%;
+            margin: 30px;
+            padding: 20px;
+    
+            flex-direction: column;
+        }
+    
+        /* .cat {
+            text-align: justify;
+        }
+        .acheter1 {
+        position: relative; 
+        left: 80%;
+        }
+    
+        .acheter2 {
+        position: relative; 
+        left: 80%;
+        }
+    
+        .acheter3 img {
+        position: relative; 
+        left: 80%;
+        } */
+    
+    
+     /* section VALEURS */
+    
+        #nosvaleurs {
+            height: 60vh; 
+            width: 80%;
+            margin: 50px 10px 50px 10px;
+            padding: 30px;
+    
+            flex-direction: column;
+    
+        }
+    
+        h3 {
+            font-size: 30px;
+        }
+    
+    
+        .blocktext {
+            font-size: 15px;
+            text-align: justify;
+    
+        }
+    
+        .art img {
+        width: 100%;
+        height: 100%;
+    
+    
+    
+        }
+    
+        .signature img {
+            position: relative;
+            bottom: 80%;
+            left: 70%;
+            height: 70px;
+        }
+    
+    
+    /* section FOOTER */
+        footer {
+        height: 30vh;
+        width: 100%;
+        }
+    
+    
+    
+    }
+
+
+
+/* 
+    @media (max-width: 700px) {
+
+        section HEADER 
+    .icones {
+        padding: 5px;
+        }
+    
+        section BANNIERE  
+    
+        #banner {
+            height: 50vh;
+            width: 100%;
+            background:url(Images_accueil/banniere/Banner.png)no-repeat center / cover;
+        }
+    
+    
+        .logo img  {
+            width: 110px;
+            height: 110px;
+            position: relative;
+            bottom: 10px;
+            right: 40px;
+    
+        }
+    
+        .titre img {
+            width: 310px;
+            height: 160px;
+            position: relative;
+            bottom: 100px;
+    
+    
+        }
+
+         section VÊTEMENTS 
+    #clothes {
+        width: 70%;
+        height: 100%;
+        margin: 30px;
+        padding: 20px;
+
+        flex-direction: column;
+    }
+
+
+    section VALEURS 
+
+    #nosvaleurs {
+        height: 60vh; 
+        width: 80%;
+        margin: 50px 10px 50px 10px;
+        padding: 30px;
+
+        flex-direction: column;
+
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+
+    .blocktext {
+        font-size: 15px;
+        text-align: justify;
+
+    }
+
+    .art img {
+    width: 400px;
+    height: 300px;
+
+
+
+    }
+
+    .signature img {
+        position: relative;
+        bottom: 20px;
+        left: 250px;
+
+        height: 70px;
+    }
+
+
+section FOOTER 
+    footer {
+        height: 30vh;
+        width: 100%;
+        }
+    
+    
+    }  */
+
+    
