@@ -145,6 +145,8 @@ header {
 
 h2 {
     margin-left: 2%;
+    text-decoration: none;
+    color: white;
 }
 
 nav .icones { gap: 10px;
