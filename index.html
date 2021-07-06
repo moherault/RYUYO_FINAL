@@ -19,8 +19,8 @@
 
 <body>
 
-    <!-- HEADER -->
-    <header>
+     <!-- HEADER  -->
+        <header>
         <h2>流用</h2>
         <nav>
             <span class="icones"><a href="http://" target="_blank"><img src="Images_accueil/icones/favoris.png" alt="favoris"></a></span>
@@ -28,6 +28,39 @@
             <span class="icones"><a href="http://" target="_blank"><img src="Images_accueil/icones/panier.png" alt="panier"></a></span>
         </nav>
     </header>
+
+        <!-- menu burger -->
+        <nav class="burger"  role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+              
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu">
+                <a href="#"><li>Accueil</li></a>
+                <a href="#"><li>Favoris</li></a>
+                <a href="#"><li>Panier</li></a>
+                <a href="#"><li>Mon compte</li></a>
+              </ul>
+            </div>
+          </nav>
+
 
      <!-- section BANNIERE -->
     <section id="banner">
@@ -99,7 +132,8 @@
     <p>Chez <strong>RYUYO</strong> nous croyons en la paix dans le monde et au père noël. 
         C’est pourquoi nous souhaitons vous proposer le meilleur au prix le plus bas.
         Nos articles sont fabriqués en France, cruelty free, conçus avec des matières recyclées et issues du commerce équitable.
-        Nous vous aidons à déménager et gardons même vos enfants, si besoin.</p>
+        Nous vous aidons à déménager et gardons même vos enfants, si besoin. 
+    </p>
 
     <div class="signature"><img src="Images_accueil/signature.png" alt="signature"></div>
 
