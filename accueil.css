@@ -220,6 +220,21 @@ body {
     align-items: center;
  
 }
+
+.acheter1 {
+    margin-top: 20px;
+}
+
+.acheter2 {
+    margin-top: 25px;
+}
+
+.acheter3 {
+    margin-top: 20px;
+}
+
+
+
 /* section VALEURS */
 
 #nosvaleurs {
@@ -227,7 +242,7 @@ body {
     height: 40vh; 
     width: 80%;
     margin: 10%;
-    padding: 20px;
+    padding: 25px;
 
     display: flex;
     justify-content: center;
@@ -240,8 +255,8 @@ h3 {
 
 .art img {
     position: relative; 
-    width: 450px;
-    height: 310px;
+    width: 550px;
+    height: 350px;
     top: 5%; 
     right: 5%;
 }
@@ -406,8 +421,8 @@ h3 {
         #clothes {
             width: 70%;
             height: 100%;
-            margin: 30px;
-            padding: 20px;
+            margin: 50px;
+            padding: 30px;
     
             flex-direction: column;
         }
@@ -433,6 +448,7 @@ h3 {
         .blocktext {
             font-size: 15px;
             text-align: justify;
+        
     
         }
     
@@ -444,9 +460,11 @@ h3 {
     
         .signature img {
             position: relative;
-            bottom: 80%;
+            bottom: 70%;
             left: 70%;
             height: 70px;
+
+            margin-top: 100px;
         }
     
     
