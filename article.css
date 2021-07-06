@@ -143,8 +143,13 @@ header {
     height: 7vh;
 }
 
-h2 {
+h2{
     margin-left: 2%;
+}
+
+a{
+    color: white;
+    text-decoration: none;
 }
 
 nav .icones { gap: 10px;
@@ -271,6 +276,7 @@ select{
     font-size: 25px;
     color: rgba(195, 201, 217, 1);
     font-weight: lighter;
+    background: rgba(255, 255, 255, .5);
     box-shadow: 1px 1px 1px 1px rgba(170, 150, 141);
 }
 

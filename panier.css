@@ -3,44 +3,44 @@ html{
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
 }
- 
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
- 
+
 body{
-    font-family: sans-serif;
-    background: #c3c9d9;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Sanchez', serif;
 }
- 
-div{
+
+.config .confirmation .resumer .articles .promo .prom .proms .section-prom .panier .lepanier .monpanier .vet-lin .taille .tailles .buton-taille .liste-envie .favoris .effacer .table-cell .pluss {
     display:block;
 }
- 
+
 header{
     background: black;
     color: white;
     height: 7vh;
 }
- 
+
 .ryuyo{
     margin-left: 2%;
 }
- 
+
 nav .icones { 
     gap: 10px;
     margin: 20px;
 }
- 
- 
+
+
 .flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
- 
+
 .logo{
    justify-content: flex-start ;
    margin: 30px;
@@ -50,61 +50,73 @@ h1{
    color: white;
 } 
 /*panier etc*/ 
-.config{
+#confi{
     max-width: 1220px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 0;
+   
+}
+
+.tom{
+    background-color: #dabeae;
+}
+.config{
     font-size: 0px;
 }
 .confirmation{
-    background-color: #dabeae;
     margin: 40px auto;
     text-align: center;
     font-size: 26px;
+    width:637px;
+    height:23px;
+    Top: -4490px;
+    Left: -199px;
 }
- 
+
 .active{
     font-weight: 700;
     color: black;
 }
- 
- 
+
+
 .s{
-    font-size: 16px;
+    font-size: 24px;
     color: #767676;
     display: inline-block;
+    line-height: 31px;
+    text-align: center;
 }
- 
+
 .s::before{ 
     content: '>';
     padding: 0 10px;
 }
- 
+
 /*resume*/
 .resumer{
     margin-left: -10px;
     margin-right: -10px;
 }
- 
+
 .articles{
     padding-right: 10px;
 }
- 
+
 .promo{
     position: relative;
     margin-bottom: 20px;
     width: 100%;
 }
- 
+
 .proms{
     width: 100%;
     display: flex;
     padding: 24px;
 }
- 
+
 .promos{
     position: relative;
     -webkit-box-flex: 1;
@@ -112,11 +124,15 @@ h1{
     padding: 12px;
     display: flex;
 }
- 
+
 .section-prom{
     padding-left: 24px;
+    background-color: #dabeae;
+    width: 553px;
+    height: 100px;
+    border-radius: 20px;
 }
- 
+
 .titre1{
     font-size: 20px;
     font-weight: 700;
@@ -126,7 +142,7 @@ h1{
     justify-content: space-between;
     line-height: 25px;
 }
- 
+
 p{
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -134,36 +150,49 @@ p{
     margin-inline-end: 0px;
     line-height: 25px;
 }
- 
+
 .operation{
     color: #222;
     font-weight: 700;
     font-size: 17px;
     cursor: pointer;  
 }
- 
+
 .icon{
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     vertical-align: middle;
 }
- 
+
 .phrase{
     margin-top: 5px;
 }
- 
+
 .lire{
     position: relative;
     font-size: 15px;
     line-height: 14px;
     padding-left: 24px;
 }
- 
+
 .profit{
     vertical-align: middle;
 }
- 
+
 /*panier*/
+.lepanier{
+    margin-bottom: 18px;
+}
+
+.monpanier{
+    position: relative;
+    padding: 24px 24px 4px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
 .pan{
     display: inline-block;
     margin: 0;
@@ -175,7 +204,7 @@ p{
     line-height: 22px;
     padding-left: 24px;
 }
- 
+
 table{
     display: table;
     text-indent: initial;
@@ -183,12 +212,12 @@ table{
     border-collapse: collapse;
     border-spacing: 0;
 }
- 
+
 .vet{
     width: 100%;
     font-size: 12px;
 }
- 
+
 td.enfant{
     display: table-header-group;
     vertical-align: middle;
@@ -199,11 +228,11 @@ td.select{
     vertical-align: middle;
     border-color: inherit;
 }
- 
+
 .select{
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 4px solid white;
 }
- 
+
 th{
     display: table-cell;
     vertical-align: inherit;
@@ -214,30 +243,50 @@ th{
     font-weight: 700;
     text-align: left;
 }
- 
+
 .item{
     width: 50%;
     padding-left: 24px;
 }
- 
+
+.prix{
+    width: 20%;
+    text-align: left;
+}
+
+.quantité{
+    width: 13%;
+    text-align: left;
+}
+
+.total{
+    width: 17%;
+    padding-right: 24px;
+    text-align: right;
+}
+
 tbody{
     display: table-row-group;
     vertical-align: middle;
     border-color: inherit
 }
- 
+
 .vetement{
     border-top: 10px solid #f6f6f6;
     padding-top: 0;
 }
- 
+
+.vetis{
+    text-align: center;
+}
+
 tr{
     display: table-row;
     vertical-align: inherit;
     border-color: inherit;
     text-align: center;
 }
- 
+
 .enfant{
     padding: 0;
     margin-bottom: 20px;
@@ -247,13 +296,13 @@ tr{
     padding-bottom: 20px;
     padding-left: 24px;
 }
- 
+
 a{
     color: #666;
     text-decoration: none;
     background-color: transparent;
 }
- 
+
 .invets{
     width: 116px;
     height: 154px;
@@ -262,11 +311,11 @@ a{
     z-index: 1;
     float: left!important;
 }
- 
+
 em{
     font-style: normal;
 }
- 
+
 .ivets2{
     display: none;
     position: absolute;
@@ -280,7 +329,7 @@ em{
     top: 5px;
     left: 0;
 }
- 
+
 .invets3{
     overflow: hidden;
     text-overflow: ellipsis;
@@ -295,17 +344,17 @@ em{
     cursor: pointer;
     z-index: 1;
 }
- 
+
 .i2{
     vertical-align: middle;
     width: 80%;
 }
- 
+
 .vet-lin{
     width: 100%;
     border: 0;
 }
- 
+
 .taille{
     position: relative;
     padding-left: 128px;
@@ -313,12 +362,12 @@ em{
     text-align: left;
     height: 123px;
 }
- 
+
 .tailles{
     display: block!important;
     margin-top: 32px;
 }
- 
+
 .buton-taille{
     cursor: pointer;
     white-space: nowrap;
@@ -332,15 +381,15 @@ em{
     border: 1px solid #f2f2f2;
     margin-bottom: 8px;
 }
- 
+
 [tabindex="0"]{
     outline: 0;
 }
- 
+
 .choix-taille{
     margin-bottom: 10px;
 }
- 
+
 .icon2{
     vertical-align: middle;
     color: #222;
@@ -350,23 +399,23 @@ em{
     font-style: normal;
     -webkit-font-smoothing: antialiased;
 }
- 
+
 /*liste*/
- 
+
 .liste-envie{
     position: absolute;
     bottom: 0;
     white-space: nowrap;
     z-index: 1;
 }
- 
+
 .favoris{
     display: inline-block;
     position: relative;
     margin-right: 24px;
- 
+
 }
- 
+
 .like{
     cursor: pointer;
     display: inline-block;
@@ -375,18 +424,18 @@ em{
     text-decoration: none;
     font-size: 13px;
 }
- 
+
 .icon3{
     font-size: 16px;
     vertical-align: middle;
 }
- 
+
 .effacer{
     display: inline-block;
     position: relative;
     margin-right: 24px;
 }
- 
+
 .efface{
     cursor: pointer;
     display: inline-block;
@@ -395,9 +444,9 @@ em{
     text-decoration: none;
     font-size: 13px;
 }
- 
+
 /*prix*/
- 
+
 .col-price{
     display: table-cell;
     vertical-align: inherit;
@@ -416,7 +465,7 @@ em{
     display: table-cell;
     height: 152px;
 }
- 
+
 .goods{
     display: block;
     line-height: 16px;
@@ -425,7 +474,7 @@ em{
     font-size: 16px;
     font-weight: 700;
 }
- 
+
 .num-box{
     width: 9px;
     top: 5px;
@@ -435,11 +484,16 @@ em{
     height: 20px;
     line-height: 20px;
 }
- 
-.tras{
+
+.tras-box{
     top: -40px;
 }
- 
+
+.qw-num-box .tras-box span {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+}
 .qw-num-box .tras-box {
     position: absolute;
     top: 0;
@@ -455,14 +509,14 @@ em{
     text-align: left;
     width: 13%; 
 }
- 
+
 .pluss{
     display: table-cell;
     height: 152px;
     vertical-align: baseline;
     padding-top: 32px;
 }
- 
+
 .pluse{
     white-space: nowrap;
     display: flex;
@@ -471,7 +525,7 @@ em{
     align-items: center;
     overflow: hidden;
 }
- 
+
 li>.plis{
     list-style: none;
     display: inline-block;
@@ -482,7 +536,7 @@ li>.plis{
     border: 1px solid #e6e6e6;
     border-radius: 100px 0 0 100px;
 }
- 
+
 .icon-plus{
     font-family: iconfont!important;
     font-style: normal;
@@ -496,13 +550,13 @@ li>.plis{
     opacity: .3;
     padding-left: 300px;
 }
- 
+
 .number{
     list-style: none;
     display: inline-block;
     font-size: 14px;
 }
- 
+
 .number1{
     width: 34px;
     height: 28px;
@@ -516,7 +570,7 @@ li>.plis{
     border-bottom: 1px solid #e6e6e6;
     font-size: 13px;
 }
- 
+
 .numbers{
     width: 100%;
     height: 28px;
@@ -573,10 +627,10 @@ footer{
     
 .p{
     
-display: flex;
-justify-items: center;
-flex-direction: column;
-gap: 10px;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  gap: 10px;
 }
     
 .imagesréseaux{
@@ -614,5 +668,5 @@ gap: 10px;
         height: 90%;
     }
 }    
-
-
+     
+    
