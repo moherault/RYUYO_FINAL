@@ -21,11 +21,11 @@
 
     <h2>流用</h2> 
 
-    <nav> <span class="icones"><nav> 
+    <nav><span class="icones"><nav> 
  <span class="icones"><a href="#"><img src="headerfooter/image/favoris.png" alt="favoris"></a></span>
  <span class="icones"><a href="#"><img src="headerfooter/image/contact.png" alt="profil"></a></span>
  <span class="icones"><a href="#"><img src="headerfooter/image/imagepanier2.png" alt="panier"></a></span>        
- </nav>     
+    </nav>     
 
 </header>
             
@@ -40,6 +40,7 @@
       <span></span>
      
       <ul id="menu">
+
         <a href="#"><li>Accueil</li></a>
         <a href="#"><li>Favoris</li></a>
         <a href="#"><li>Panier</li></a>
@@ -108,13 +109,13 @@
 <!-- BOUTONS / SELECTEURS -->
             <div class="buttons">
             <button class="bouton-cart" type="button">
-                <a href="#" class="btn">ADD TO CART</a>   
+                <a href="#" class="btn">AJOUTER AU PANIER</a>   
             </button>
 
             <div class="selecteur">
-            <label for="size-select">SIZE</label>
+            <label for="size-select">TAILLE</label>
             <select name="sizes" id="sizes">
-                <option value="Select your size">Select your size</option>
+                <option value="Select your size">Selectionner votre taille</option>
                 <option value="XXS">XXS</option>
                 <option value="XS">XS</option>
                 <option value="S">S</option>
@@ -206,6 +207,14 @@
     </footer>
 
     <!-- FOOTER ET HEADER DOMINIQUE --> 
+
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js%22%3E"></script>
+
+<script>
+    gsap.from ('.nomcategorie', {opacity:0, duration:1, y:50, ease:'Power2.easeInOut'})
+</script>
+       
+        
     
 </body>
 </html>
