@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>RYUYO: Panier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sanchez&display=swap');
+    </style>
+
     <header class="flex">  
 
         <h2 class="ryuyo">流用</h2> 
@@ -32,14 +39,14 @@
                 <span class="s">
                     Livraison
                 </span>
-                <span class="s">
-                    Paiement
+                <span class="s"> <a href="paiement.html">Paiement</a>
+                    
                 </span>
             </div>
         </div>    
     </section>
 
-    <section>
+    <section id="confi">
         <div class="resumer">
             <div class="articles">
                 <div class="promo">
@@ -71,7 +78,7 @@
         </div>
     </section>
 <!--Titre Panier-->
-    <section>
+    <section id="confi" class="tom">
         <div class="panier">
             <div class="lepanier">
                 <div class="monpanier">
@@ -94,10 +101,11 @@
         <tbody class="vetement">
             <tr class="vetis">
                 <td class="enfant">
+                 <th>
                    <a href="" class="invets">
                       <em class="ivets2" style="display: none;">-0%</em> 
                       <div class="vet-lin">
-                          <img src="img/ta-nya.jpg" alt="" class="i2">
+                          <img src="imagesV/" alt="" class="i2">
                       </div>
                    </a>
                    <a href="" class="invets3">
@@ -116,7 +124,7 @@
                                </i>
                            </div>
                        </div>
-                   </div>
+                   </div></th>
 
                    <div class="liste-envie">
                        <div class="favoris">
@@ -180,28 +188,28 @@
 
     <!-- FOOTER -->
 <footer>
-    <div>
+    <div class="foot">
        <div class="paiement">
        <h3>Paiement sécurisé </h3>
        <p>Carte Bleue,Visa,Mastercard</p>
     </div>
     
-    <div class="serviceclient">
+    <div class="serviceclient" class="foot">
        <h3>Service client </h3>
        <p>Contactez-nous</p>
     </div>
     
     
     
-    <div class="inscription">      
+    <div class="inscription" class="foot">      
       <div><P> INCRIVEZ VOUS A NOTRE NEWSLETTER!</P></div>
     
-      <div><p>+ DE NEWS + DE MODE + DE BONS PLANS</p> </div>
-      <div><label for="email">Inscrivez votre Email</label></div>
-      <div><input type="email" id="email"pattern="Inscrivez votre Emailsize="30" required></div>
+      <div class="foot"><p>+ DE NEWS + DE MODE + DE BONS PLANS</p> </div>
+      <div class="foot"><label for="email">Inscrivez votre Email</label></div>
+      <div class="foot"><input type="email" id="email"pattern="Inscrivez votre Emailsize="30" required></div>
     </div>
     
-    <div class="footerinformation">   
+    <div class="footerinformation" class="foot">   
     
       <a href="Moncompte">Mon Compte</a>
       <a href="Faireunretour">Faire un retour</a>
@@ -214,18 +222,18 @@
     
     <footer>
     
-    <div>
+    <div class="foot">
     
-       <div class="Réseauxsociaux">  
+       <div class="foot" class="Réseauxsociaux">  
        
-        <div class="p">
+        <div class="foot" class="p">
     
         <p>SUIVEZ-NOUS !</p>    
         <p>REJOIGNEZ LA COMMUNAUTÉ  RYUYO </p>
     
     </div>
     
-    <div class="imagesréseaux">
+    <div class="foot" class="imagesréseaux">
     
        <a href="#"><img src="headerfooter/image/facebook.png" alt="facebook"></a>
        <a href="#"><img src="headerfooter/image/instagram2.png" alt="Instagram"></a>
