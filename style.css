@@ -1,3 +1,4 @@
+
 html{
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
@@ -11,8 +12,9 @@ html{
 }
 
 body{
-    font-family: sans-serif;
-    background: #c3c9d9;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Sanchez', serif;
 }
 
 div{
@@ -24,6 +26,12 @@ header{
     color: white;
     height: 7vh;
 }
+
+#confi{
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
 
 .ryuyo{
     margin-left: 2%;
@@ -41,6 +49,15 @@ nav .icones {
     align-items: center;
 }
 
+.conf{
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.col-sm-4{
+    
+}
+
 .logo{
    justify-content: flex-start ;
    margin: 30px;
@@ -50,20 +67,31 @@ h1{
    color: white;
 } 
 /*panier etc*/ 
-.config{
+#confi{
     max-width: 1220px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 0;
+   
+}
+
+.tom{
+    background-color: #dabeae;
+    border-radius: 10px;
+}
+.config{
     font-size: 0px;
 }
 .confirmation{
-    background-color: #dabeae;
     margin: 40px auto;
     text-align: center;
     font-size: 26px;
+    width:637px;
+    height:23px;
+    Top: -4490px;
+    Left: -199px;
 }
 
 .active{
@@ -73,9 +101,11 @@ h1{
 
 
 .s{
-    font-size: 16px;
+    font-size: 24px;
     color: #767676;
     display: inline-block;
+    line-height: 31px;
+    text-align: center;
 }
 
 .s::before{ 
@@ -115,6 +145,10 @@ h1{
 
 .section-prom{
     padding-left: 24px;
+    background-color: #dabeae;
+    width: 553px;
+    height: 100px;
+    border-radius: 20px;
 }
 
 .titre1{
@@ -142,6 +176,12 @@ p{
     cursor: pointer;  
 }
 
+.i2{
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 500px;
+}
+
 .icon{
     font-style: normal;
     -webkit-font-smoothing: antialiased;
@@ -164,6 +204,19 @@ p{
 }
 
 /*panier*/
+.lepanier{
+    margin-bottom: 18px;
+}
+
+.monpanier{
+    position: relative;
+    padding: 24px 24px 4px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
 .pan{
     display: inline-block;
     margin: 0;
@@ -201,7 +254,7 @@ td.select{
 }
 
 .select{
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 4px solid white;
 }
 
 th{
@@ -220,6 +273,26 @@ th{
     padding-left: 24px;
 }
 
+.tom{
+    margin: 20px;
+}
+
+.prix{
+    width: 20%;
+    text-align: left;
+}
+
+.quantité{
+    width: 13%;
+    text-align: left;
+}
+
+.total{
+    width: 17%;
+    padding-right: 24px;
+    text-align: right;
+}
+
 tbody{
     display: table-row-group;
     vertical-align: middle;
@@ -227,8 +300,12 @@ tbody{
 }
 
 .vetement{
-    border-top: 10px solid #f6f6f6;
+    border-top: 1px solid #f6f6f6;
     padding-top: 0;
+}
+
+.vetis{
+    text-align: center;
 }
 
 tr{
@@ -297,8 +374,8 @@ em{
 }
 
 .i2{
-    vertical-align: middle;
-    width: 80%;
+    /*vertical-align: middle;*/
+    width: 100%;
 }
 
 .vet-lin{
@@ -312,6 +389,7 @@ em{
     padding-right: 12px;
     text-align: left;
     height: 123px;
+    
 }
 
 .tailles{
@@ -359,7 +437,6 @@ em{
     white-space: nowrap;
     z-index: 1;
 }
-
 .favoris{
     display: inline-block;
     position: relative;
@@ -396,6 +473,10 @@ em{
     font-size: 13px;
 }
 
+.like{
+    padding-left: 20px;
+}
+
 /*prix*/
 
 .col-price{
@@ -411,10 +492,12 @@ em{
     min-height: 152px;
 }
 .table-cell{
-    vertical-align: baseline;
-    padding-top: 32px;
     display: table-cell;
+    display: block!important;
+    padding-top: 32px;
+    font-size: 16px;
     height: 152px;
+    vertical-align: middle;
 }
 
 .goods{
@@ -426,27 +509,18 @@ em{
     font-weight: 700;
 }
 
-.num-box{
-    width: 9px;
-    top: 5px;
+.c-bag-table tbody .gd-price {
     position: relative;
-    display: inline-block;
-    overflow: hidden;
-    height: 20px;
-    line-height: 20px;
+}
+.c-bag-table .col-price {
+    width: 20%;
+    text-align: left;
 }
 
-.tras{
-    top: -40px;
-}
-
-.qw-num-box .tras-box {
-    position: absolute;
-    top: 0;
-    height: auto;
-    width: 100%;
-    transform-origin: 0 0;
-    transition: top .8s;
+.c-bag-table tbody td {
+    padding: 0;
+    margin-bottom: 20px;
+    min-height: 152px;
 }
 .plus{
     padding: 0;
@@ -472,7 +546,7 @@ em{
     overflow: hidden;
 }
 
-li>.plis{
+.plis{
     list-style: none;
     display: inline-block;
     font-size: 14px;
@@ -503,7 +577,7 @@ li>.plis{
     font-size: 14px;
 }
 
-.number1{
+.num1{
     width: 34px;
     height: 28px;
     line-height: 28px;
@@ -530,6 +604,159 @@ li>.plis{
     border: 1px solid #e6e6e6;
     border-radius: 0 100px 100px 0;
 }
+
+.total-p{
+    font-weight: 700;
+    text-align: right;
+    color: #222;
+    padding-right: 24px;
+    width: 17%;
+}
+
+#bagApp .bag-app .bag-holder .bag-contents-holder .bag-title-holder--total {
+    padding-bottom: 16px;
+    margin-bottom: 0;
+}
+
+#bagApp .bag-app .bag-holder .bag-contents-holder .bag-title-holder {
+    padding: 24px 30px;
+}
+
+#bagApp .bag-app .bag-holder .bag-contents-holder .bag-title-holder .bag-title--total {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 24px;
+    margin-bottom: 14px;
+}
+#bagApp .bag-app .bag-holder .bag-contents-holder .bag-title-holder .bag-title {
+    margin: 0;
+    font-size: 1.15em;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    line-height: 22px;
+}
+
+#bagApp .bag-total-holder .bag-total-title-holder--subtotal {
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 6px;
+}
+
+#bagApp .bag-total-holder .bag-total-title-holder {
+    letter-spacing: .5px;
+    margin: .8em 0;
+}
+
+#bagApp .bag-total-holder .bag-total-title-holder .bag-total-price {
+    float: right;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+#bagApp .bag-total-holder .bag-total-title-holder--delivery {
+    font-style: normal;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+#bagApp .bag-total-holder .delivery-dropdown-holder {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #999;
+}
+
+.select2{
+width: 300px;
+}
+#bagApp .bag-total-holder .delivery-dropdown-holder .select2-container {
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.bag-title{
+    padding-top: 30px;
+}
+#bagApp .select2-container {
+    padding: 5px 0 5px 2px;
+    letter-spacing: .6px;
+}
+
+#bagApp .select2-container--default .select2-selection--single {
+    border: none;
+    font-size: .75em;
+}
+
+#bagApp .bag-total-holder .delivery-dropdown-holder .select2-container .select2-selection--single .select2-selection__rendered {
+    padding-left: 0;
+    font-size: 1.34em;
+}
+
+
+#bagApp .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #666;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+#bagApp .bag-total-holder .bag-total-button-holder {
+    margin: 25px 0 0 0;
+}
+
+#bagApp .bag-total-holder .bag-total-button--checkout {
+    text-decoration: none;
+}
+
+#bagApp .bag-total-holder .bag-total-button {
+    letter-spacing: 1.9px;
+    max-width: 100%;
+}
+
+.bag-total-button{
+    padding-right: 25px;
+}
+
+.bag-title-quicklink{
+    background-color: black;
+    color: #dabeae;
+}
+
+.bag-total-button-holder{
+    vertical-align: middle; 
+    margin-top: 70px;
+    font-size: 50px;
+}
+.bag-total-button {
+    background: black;
+    color: #dabeae;
+    border: 4px solid;
+    border-radius: 5px;
+   
+}
+
+#confi .bag-total-holder{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.bag-total-holder{
+    margin-top: 170px;
+    padding-left: 20px;
+    background-color: white;
+    text-align: center;
+
+}
+
+@media (min-width: 768px){
+    .commande{
+        width: 33.33333333%;
+    }
+}
+
 /*footer*/
 footer{
     border: 4px solid black;
@@ -615,4 +842,3 @@ gap: 10px;
     }
 }    
      
-    
