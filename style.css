@@ -54,10 +54,6 @@ nav .icones {
     margin-right: -10px;
 }
 
-.col-sm-4{
-    
-}
-
 .logo{
    justify-content: flex-start ;
    margin: 30px;
@@ -497,7 +493,7 @@ em{
     padding-top: 32px;
     font-size: 16px;
     height: 152px;
-    vertical-align: middle;
+    
 }
 
 .goods{
